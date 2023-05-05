@@ -1,0 +1,8 @@
+Dear reviewer,
+
+Regarding attack simulation drills,
+
+I have tried running the hydra command for a very long time more than 3 hours, however there is no indication from AWS GuardDuty about SSH Brute Force. even though I have done all the steps according to the instructions. :(
+
+Thanks and best regards,
+DinhPhan

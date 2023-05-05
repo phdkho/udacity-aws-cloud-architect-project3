@@ -1,0 +1,5 @@
+#1: InstanceRole, InstanceProfileRole and InstanceRolePolicy-C3: The IAM instance profile role used by the web service does not restrict the granted S3 actions and thus violates the least privilege principle.
+
+#2: WebAppSG has 5000 and 8080 ports opened. This provides HTTP base communication. As a publicly facing instance, it should be configured with 443 port for HTTPS based communications.
+
+#3: RecipeWebServiceInstance: The Recipe Web Service Instance is placed behind an Application Load Balancer but still located in a public subnet.

@@ -1,0 +1,13 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project:
+    * Port 5000 is reachable from an Internet Gateway - TCP
+    * Port 22 and 80 is reachable from an Internet Gateway - TCP
+    * Port range 0 to 65535 is reachable from an Internet Gateway - TCP
+    * Port range 0 to 65535 is reachable from an Internet Gateway - UDP
+    According to the recommendations by the AWS Inspector, it was advised to modify the Security Groups or ACLs in the network path 
+
+Provide recommendations on how to remediate the vulnerabilities:
+    *  Ensure no security groups allow ingress from 0.0.0.0/0 to port 22.
+    *  Remove access to all the mentioned ports reachable from the internet.
+    *  VPC flow logging should be enabled in all VPCs.
+    *  S3 buckets should have server-side encryption enabled.
+    *  Attached EBS volumes should be encrypted at-rest (Enable EBS server-side encryption).
